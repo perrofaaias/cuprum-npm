@@ -1,0 +1,50 @@
+{
+  "name": "cuprum",
+  "version": "0.0.0",
+  "description": "Copper-to-JavaScript transcompiler.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "type": "module",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/perrofaaias/cuprum.git"
+  },
+  "homepage": "https://github.com/perrofaaias/cuprum#readme",
+  "bugs": {
+    "url": "https://github.com/perrofaaias/cuprum/issues"
+  },
+  "keywords": [
+    "compiler",
+    "transcompiler",
+    "copper",
+    "javascript",
+    "typescript"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "perrofaaias",
+    "email": "perrofaaias@gmail.com",
+    "url": "https://github.com/perrofaaias"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}
